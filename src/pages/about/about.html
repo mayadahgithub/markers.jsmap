@@ -1,11 +1,25 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      About
+  <ion-navbar color="primary">
+     <ion-title>
+      تفاصيل اكثر
     </ion-title>
-  </ion-navbar>
+  </ion-navbar >
 </ion-header>
 
 <ion-content padding>
+  <ion-list >
+    <ion-item  *ngFor="let item of result">
+      <!--  <p>{{item.latitude}} </p>
+        <p>{{item.longitude}} </p>-->
+        <ion-avatar item-start>             
+            <img src="assets/imgs/map1.png"  width="0px" height="0px" >
+          </ion-avatar>
+  
+      <h1>{{item.name}} </h1>
+      <h2>{{item.content}} </h2>
+      <h2>{{item.addrees}} </h2>
+      
+    </ion-item>
+  </ion-list>
 
 </ion-content>
